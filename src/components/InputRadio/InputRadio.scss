@@ -1,0 +1,31 @@
+.radio {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 16px;
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__button {
+    position: absolute;
+    margin-left: -32px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='9.5' stroke='%23D0CFCF'/%3E%3C/svg%3E");
+  }
+
+  &__input:checked + &__button {
+    background-image: url("data:image/svg+xml, %3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='9.5' stroke='%2300BDD3'/%3E%3Ccircle cx='10' cy='10' r='4.5' fill='%2300BDD3' stroke='%2300BDD3'/%3E%3C/svg%3E");
+  }
+}

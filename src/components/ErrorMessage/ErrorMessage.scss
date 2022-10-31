@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.error {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 18px;
+  margin: 20px auto;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #F44336;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  &__exclamation {
+    transform: translateY(-2px) ;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+  
+  &__description {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../variables.scss";
+
+.input {
+  &__wrapper {
+    width: 328px;
+    background: $lite-color;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      width: 380px;
+    }    
+  }
+
+  &__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__file-wrapper {
+    width: 100%;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  &__file-button-text {
+    height: 54px;
+    width: 245px;
+    padding: 0 16px;  
+    border: 1px solid $lite-grey-color;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    @media (min-width: 768px) {
+      width: 297px;
+    }  
+  }
+
+  &__file-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $grey-color;
+    
+    &--isfile {
+      color: $dark-color;
+    }
+  }
+
+  &__file-button {
+    width: 83px;
+    height: 54px;
+    border: 1px solid $dark-color;
+    border-radius: 4px 0px 0px 4px;
+
+    background: $lite-color;
+    font-size: 16px;
+    line-height: 26px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.input-group { 
+  &--error-text {  
+    color: #CB3D40;
+  }
+
+  &--error-border {
+    border-color: #CB3D40;    
+  } 
+}
