@@ -33,6 +33,7 @@
     line-height: 26px;
     color: $dark-color;
     text-align: center;
+    overflow: hidden;
   }
 
   &__position, &__email, &__phone {
