@@ -34,8 +34,6 @@ export const Form: React.FC<Props> = ({ handleBackToFirstPage }) => {
   const [errorLoadPositions, setErrorLoadPositions] = useState('')
   const dataRef = useRef();
   
-  console.log(activePosition);
-
   useEffect(() => {
     setErrorLoadPositions('')
     setIsLoadingPositions(true);
@@ -220,12 +218,6 @@ export const Form: React.FC<Props> = ({ handleBackToFirstPage }) => {
           className="button form__button" 
           disabled={isSubmitting 
             || !!(errorName + errorEmail + errorPhone + errorFile + errorLoadPositions)
-
-            // || !!errorName.length
-            // || !!errorEmail.length
-            // || !!errorPhone.length
-            // || !!errorFile.length
-            // || !!errorLoadPositions.length
           }
           >
           Sign up

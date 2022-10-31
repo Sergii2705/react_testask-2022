@@ -51,7 +51,7 @@ export const Card:React.FC<Props> = ({ user }) => {
               <p className="card__email" title={email}>
                 {email}
               </p>
-              
+
               <p className="card__phone">
                 {phone}
               </p>

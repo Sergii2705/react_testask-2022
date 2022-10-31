@@ -4,10 +4,10 @@ import './Header.scss';
 export const Header = () => (
   <header className="header">
 
-    <div className="header__background-nav"/>
+    <div className="header__background-nav"/> 
 
     <div className="header__nav container">
-      <a href="/" className="logo">
+      <a href="/#" className="logo">
         <img 
           className="logo__img" 
           src={logo} 
@@ -19,7 +19,7 @@ export const Header = () => (
         <a href="#users" className="button">
           Users
         </a>
-        
+
         <a href="#sing-up" className="button">
           Sign up
         </a>
